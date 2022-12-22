@@ -1,0 +1,62 @@
+main.customer-list .center{
+    width: 50%;
+    margin: auto;
+}
+
+main.customer-list h2 {
+    text-align: center;
+}
+
+main.customer-list .btn-container{
+    display: flex;
+}
+
+main.customer-list .btn-container button{
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 300ms;
+    margin: 10px;
+}
+
+main.customer-list .btn-container #btn{
+    background: var(--primary);
+    position: relative;
+    padding: 8px 20px;
+    width: 250px;
+    margin: 30px auto 0px auto;
+}
+
+main.customer-list .btn-container #btn:hover{
+    background: var(--hover-primary);
+}
+
+main.customer-list .btn-container #btn .fa-plus{
+    position: absolute;
+    left: 5%;
+    top: 8px;
+    font-size: 22px;
+}
+
+main.customer-list .btn-container #btn span{
+   margin-left: 5px;
+}
+
+main.customer-list .list{
+    margin: 70px 0;
+}
+
+@media (max-width:1024px){
+    main.customer-list .center{
+        width: 70%;
+    }   
+}
+
+@media (max-width:768px){
+    main.customer-list .center{
+        width: 100%;
+    }  
+}

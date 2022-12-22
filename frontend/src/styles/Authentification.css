@@ -1,0 +1,123 @@
+main.authentification h2 {
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+main.authentification form{
+    background : white;
+    width: 35%;
+    margin: 50px auto;
+    border-radius: 20px;
+    padding: 60px 5%;
+    box-shadow: 0px 0px 5px rgb(207, 207, 207);
+}
+
+main.authentification form .form-control{
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+main.authentification form .form-control span{
+    color: #bd1b1b;
+}
+
+main.authentification form .form-control label{
+    font-weight: 500;
+    margin: 5px 10px;
+    font-size: 20px;
+}
+
+main.authentification form .form-control input{
+    border: #cacaca 1px solid;
+    height: 45px;
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 0 10px;
+}
+
+main.authentification form .form-control input:focus{
+    outline: var(--primary) 2px solid;   
+}
+
+main.authentification form #btn{
+    background: var(--primary);
+    border: none;
+    width: 100%;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 30px auto 0 auto;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+main.authentification form #btn:hover{
+    background: var(--hover-primary);
+}
+
+main.authentification .contact-us{
+    margin: auto;
+    max-width: max-content;
+    text-align: center;
+}
+
+main.authentification .contact-us a{
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+main.authentification .contact-us a:hover{
+    border-bottom: 1px solid var(--primary);
+}
+
+main.authentification form .form-control.radio_checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main.authentification form .form-control .sexe-div input[type="radio"],
+main.authentification form .form-control.radio_checkbox input[type="checkbox"]
+{
+    height: initial;
+    cursor: pointer;
+    margin: 0;
+}
+
+main.authentification  form .form-control .sexe-div input:focus,
+main.authentification  form .form-control.radio_checkbox :focus{
+    outline: none;
+}
+
+h3 a{
+    color: var(--primary);
+    border-bottom: var(--primary) 2px solid;
+    transition: 300ms;
+}
+
+h3 a:hover{
+    color: var(--hover-primary);
+    border-bottom: var(--hover-primary) 2px solid;
+    margin-left: 5px;
+}
+
+
+
+@media (max-width: 1024px) {
+    main.authentification form{
+        width: 60%;
+        margin: 150px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    main.authentification form{
+        width: 90%;
+        margin: 50px auto;
+    }
+}
+

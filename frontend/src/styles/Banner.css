@@ -1,0 +1,122 @@
+header{
+    background: var(--primary);
+    color: white;
+    height: fit-content;
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+
+.header-content{
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 2%;
+    animation: header-appear both 1s;
+}
+
+@keyframes header-appear{
+    0%{
+        opacity: 0;
+        transform: perspective(0);
+    }
+    100%{
+        opacity: 1;
+        transform: perspective(1);
+    }
+}
+
+header .header-content .fa-shield-dog{
+    font-size: 40px;
+    margin: 0 8px;
+}
+
+#logo{
+    margin: 0 0 0 7%;
+}
+
+#logo h1{
+    font-family: 'Shrikhand', 'cursive';
+    color: white;
+    font-size: 30px;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.fa-arrow-left{
+    padding: 20px 10px 10px 10px;
+    border-radius: 0 0 25px 25px;
+    transition: 300ms;
+}
+
+.fa-arrow-left:hover{
+    background: white;
+}
+
+header nav .fa-solid{
+    padding: 20px 10px 10px 10px;
+    margin: 0 2px 0 2px;
+    border-radius: 0 0 25px 25px;
+    transition: 300ms;
+    margin: 0 0 10px 0;
+}
+
+header .fa-solid:hover {
+    background: white;
+    color: var(--primary);
+}
+
+header nav .fa-power-off:hover{
+    background: white;
+    color: #970000;
+}
+
+header .fa-solid{
+    color: white;
+    font-size: 25px;
+    margin: 0 0 10px 0;
+
+}
+
+@media (max-width:768px) {
+    .header-content{
+        margin: 20px 0;
+    }
+
+    #logo{
+        margin: auto;
+    }
+    
+    #logo h1{
+        font-size: 25px;
+        margin: 0;
+    }
+
+    header .header-content .fa-shield-dog{
+        font-size: 30px;
+        margin: 0 3px;
+    }
+
+    header nav{
+        font-size: 20px;
+        padding: 0px;
+        border-radius: 50px;
+    }  
+
+    header .fa-arrow-left:hover {
+        background: none;
+        color: white
+    }
+    
+    header nav .fa-solid{
+        font-size: 18px;
+        margin: 0 4px;
+        padding:  7px;
+        background: #e7e7e790;
+        border-radius: 50px;
+    }  
+} 

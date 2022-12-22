@@ -1,0 +1,155 @@
+main.form  h2 {
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+main.form  form {   
+        width: 45%;
+        margin: auto;
+}
+
+main.form  form section{
+    background : white;
+    width: auto;
+    margin: 50px 0;
+    border-radius: 20px;
+    padding: 30px 5%;
+    box-shadow: 0px 0px 5px rgb(207, 207, 207);
+}
+
+main.form  form .add_pet{
+    width: fit-content;
+    cursor: pointer;
+    margin: auto;
+    padding: 7px 10px;
+    color: var(--primary);;
+    transition: 200ms;
+    font-weight: 600;
+    border-radius: 50px;
+} 
+
+main.form  form .add_pet:hover{
+    transform: scaleY(1.05) scaleX(1.05);
+    text-decoration: underline;
+} 
+
+
+main.form  form .form-control{
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+main.form  form .form-control span{
+    color: #bd1b1b;
+}
+
+main.form  form .form-control label{
+    font-weight: 500;
+    margin: 5px 10px;
+    font-size: 20px;
+}
+
+main.form  form .form-control input{
+    border: #cacaca 1px solid;
+    height: 45px;
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 0 10px;
+}
+
+main.form  form .form-control input:focus{
+    outline: var(--primary) 2px solid;   
+}
+
+main.form  form .btn-container{
+    display: flex;  
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+main.form form .form-control.radio_checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main.form form .form-control .sexe-div input[type="radio"]{
+    height: initial;
+    cursor: pointer;
+    margin: 0;
+}
+
+main.form  form .form-control .sexe-div input:focus{
+    outline: none;
+}
+
+main.form  form .btn-container input,
+main.form  form .btn-container button{
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 300ms;
+    margin: 20px;
+}
+
+main.form  form .btn-container #btn{
+    background: var(--primary);
+    width: 35%;
+}
+
+main.form  form .btn-container #delete{
+    background:#d30f0f;
+    padding: 8px 20px;
+    font-size: 30px;
+}
+
+main.form  form .btn-container #cancel{
+    background:#8d8d8d;
+    padding: 8px 20px;
+    font-size: 30px;
+}
+
+main.form  form .btn-container #btn:hover{
+    background: var(--hover-primary);
+}
+
+main.form  form .btn-container #delete:hover{
+    background:#850d0d;
+}
+
+main.form  form .btn-container #cancel:hover{
+    background:#727272;
+}
+
+.margin-top-30{
+    margin-top: 30px;
+}
+
+@media (max-width: 1024px) {
+    main.form  form {
+        width: 75%;
+    }
+}
+
+@media (max-width: 768px) {
+    main.form  form {
+        width: 100%;
+    }
+    
+    main.form  form .btn-container #btn{
+        width: 70%;
+        height: 50px;
+    }
+    
+    main.form  form .btn-container #delete{
+        width: 30%;
+        height: 50px;
+    }
+}

@@ -1,0 +1,74 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Shrikhand&display=swap');
+
+ :root{
+  --primary: #23A0A4;
+  --secondary: #1b1b1b;
+  --tertiary: #f5f5f5;
+  --hover-primary: #23bdc2; 
+ }
+
+ body {
+  margin: 0;
+  background: var(--tertiary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 370px;
+}
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+main{
+  margin: auto;
+  max-width: 1450px;
+  padding: 25px 10px;
+  min-height: 800px;
+  animation: appear 1000ms both;
+}
+
+button, input[type="submit"]{
+  animation: scale 1200ms both;
+}
+
+
+
+
+@keyframes appear{
+  0%{
+    opacity: 0;
+    transform: translateY(150px)
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px)
+  }
+}
+
+@keyframes scale{
+  0%{
+    opacity: 0;
+    transform: scaleX(0) scaleY(0);
+    
+  }
+  100%{
+    opacity: 1;
+    transform: scaleX(1) scaleY(1) 
+  }
+}
+
+h2{
+  color: var(--primary);
+  font-size: 35px;
+  font-weight: 700;
+}
+
+h3 {
+  color: var(--primary);
+  font-size: 22px;
+  font-family: "Montserrat", "sans-serif";
+}

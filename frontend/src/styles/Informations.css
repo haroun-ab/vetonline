@@ -1,0 +1,123 @@
+main.informations .center{
+    width: 50%;
+    margin: auto;
+}
+
+main.informations section{
+    margin: 70px 5% 0 5% 
+}
+
+main.informations section h3{
+    margin: 60px 0 30px 0;
+}
+
+main.informations section div{
+    margin: 20px 5%; 
+    display: flex;
+    justify-content: left;
+}
+
+main.informations section div span{
+    font-size: 18px;
+    margin: 0 3px;
+}
+
+main.informations section div span{
+    font-size: 18px;
+    margin: 0 3px;
+}
+
+main.informations section div span.title{
+    font-weight: 600;
+    width: 180px;
+    text-align: right;  
+}
+
+main.informations section div.consultations{
+   display: flex;
+   flex-direction: column;
+}
+
+main.informations section div.consultations ul{
+    list-style-type:square ;
+}
+
+main.informations .btn-container{
+    display: flex;
+    width: 50%;
+    margin: 50px auto;
+}
+
+main.informations .btn-container button{
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 300ms;
+    margin: 10px;
+}
+
+main.informations .btn-container #btn{
+    background: var(--primary);
+    padding: 8px 20px;
+    width: 70%;
+}
+
+main.informations .btn-container #send-mail{
+    background:#0a70c4;
+    width: 30%;
+    padding: 8px 20px;
+    font-size: 30px;
+}
+
+main.informations .btn-container #btn:hover{
+    background: var(--hover-primary);
+}
+
+main.informations .btn-container #send-mail:hover{
+    background:#008cff;
+}
+
+
+@media (max-width: 1024px) {
+    main.informations .center{
+        width: 70%;
+    }
+
+    main.informations .btn-container{
+        width: 90%;
+    }
+    
+    main.informations .btn-container #edit{
+        width: 50%;
+    }
+    
+    main.informations .btn-container #send-mail{
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    main.informations .center{
+        width: 90%;
+    }
+
+    main.informations section div{
+        margin: 15px 3%; 
+        display: block;    
+    }
+
+    main.informations .btn-container{
+        width: 90%;
+    }
+    
+    main.informations .btn-container #btn{
+        width: 100%;
+    }
+    
+    main.informations .btn-container #send-mail{
+        width: 50%;
+    }
+}
